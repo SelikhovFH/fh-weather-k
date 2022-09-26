@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/details.css">
+
+        <title>FH | San Francisco</title>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container container">
+                    <div class="header__logo">
+                        <img src="./assets/weather_logo.svg" alt="Logo" title="FH Logo">
+                    </div>
+                    <div class="search">
+                        <input class="search__input" type="text" placeholder="Enter the name of the city, region, or country">
+                        <img class="search__icon" src="./assets/search.svg" alt="Search">
+                        <ul class="search__dropdown">
+                            <li class="dropdown__item">
+                                <p class="item__text">
+                                    <b>City</b>, region, country
+                                </p>
+                            </li>
+                            <li class="dropdown__item">
+                                <p class="item__text">
+                                    <b>City</b>, region, country
+                                </p>
+                            </li>
+                            <li class="dropdown__item">
+                                <p class="item__text">
+                                    <b>City</b>, region, country
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lang">
+                        <button class="lang__btn lang__btn_selected">
+                            EN
+                        </button>
+                        <button class="lang__btn">
+                            UA
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <main class="main">
+            <div class="main__container container">
+                <section class="jumbotron">
+                    <div class="jumbotron__weather">
+                        <h1 class="weather__city-name">San Francisco</h1>
+                        <p class="weather__temperature">28°C</p>
+                        <p class="weather__precipitation">Cloudy</p>
+                    </div>
+                    <div class="jumbotron__datetime">
+                        <p class="datetime__text">12:00, Friday</p>
+                    </div>
+                </section>
+                <section class="hourly-forecast">
+                    <div class="hourly-forecast__title">
+                        <img class="title__icon" src="./assets/clock.svg">
+                        <h2 class="heading">Hourly forecast</h2>
+                    </div>
+                    <div class="hourly-forecast__weather-cards">
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                Now
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                13:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                14:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                15:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                16:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                17:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/sunny.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                18:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                19:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/sunny.svg">
+                                <p class="weather-card__temperature">27°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                19:55
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/sunset.svg">
+                                <p class="weather-card__temperature">Sunset</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                20:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/night.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                21:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="./assets/night.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="weather-indicators">
+                    <div class="weather-indicators__cards">
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/thermometer.svg">
+                                <p class="heading">Feels like</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_feels">28°C</p>
+                                <p class="indicator-card__secondary-text indicator-card__main-secondary_feels">Feels almost the same</p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/vane.svg">
+                                <p class="heading">Wind</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <img class="compass-icon" src="./assets/compass.svg">
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/sun.svg">
+                                <p class="heading">UV Index</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="uv-card__main-text">
+                                    0<br>
+                                    Low
+                                </p>
+                                <div class="uv-card__slider">
+                                    <div class="slider__ball"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/humidity.svg">
+                                <p class="heading">Humidity</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_humidity">
+                                    84%
+                                </p>
+                                <p class="indicator-card__secondary-text indicator-card__secondary-text_humidity">
+                                    Dew point now: 14
+                                </p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/sunrise.svg">
+                                <p class="heading">Sunrise</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_sunrise">
+                                    7:36
+                                </p>
+                                <div class="indicator-card__sunrise-chart">
+                                    <img class="sunrise-chart__parabola" src="./assets/parabola.svg">
+                                    <hr class="sunrise-chart__axis">
+                                </div>
+                                <p class="indicator-card__secondary-text_sunset">
+                                    Sunset: 19:55
+                                </p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/eye.svg">
+                                <p class="heading">Visibility</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_visibility">
+                                    24 km
+                                </p>
+                                <p class="indicator-card__secondary-text indicator-card__secondary-text_visibility">
+                                    Completely clear sky
+                                </p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/compass-2.svg">
+                                <p class="heading">Pressure</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <img class="pressure-indicator" src="./assets/pressure-indicator.svg">
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="./assets/cloud-2.svg">
+                                <p class="heading">Cloudiness</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_cloudiness">
+                                    20%
+                                </p>
+                                <p class="indicator-card__secondary-text indicator-card__secondary-text_cloudiness">
+                                    Medium cloudiness
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="weather-charts">
+                    <div class="chart-selector">
+                        <div class="chart-selector__item chart-selector__item_active">
+                            <img class="chart-selector__icon" src="./assets/thermometer.svg">
+                        </div>
+                        <div class="chart-selector__item">
+                            <img class="chart-selector__icon" src="./assets/drop.svg">
+                        </div>
+                        <div class="chart-selector__item">
+                            <img class="chart-selector__icon" src="./assets/sun-2.svg">
+                        </div>
+                    </div>
+                    <div class="weather-charts__title">
+                        <img class="title__icon" src="./assets/calendar.svg">
+                        <p class="heading">Weekly forecast</p>
+                    </div>
+                    <img class="chart" src="assets/chart.svg">
+                </section>
+            </div>
+        </main>
+    </body>
+    <script>
+        const search = document.querySelector('.search');
+        const searchInput = document.querySelector('.search__input');
+        const dropdown = document.querySelector('.search__dropdown');
+        const overlay = document.querySelector('.overlay');
+
+        searchInput.addEventListener('focus', () => {
+            search.classList.add('active');
+            overlay.style.display = 'block';
+            dropdown.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+
+        searchInput.addEventListener('blur', () => {
+            search.classList.remove('active');
+            overlay.style.display = 'none';
+            dropdown.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    </script>
+</html>
