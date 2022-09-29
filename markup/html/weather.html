@@ -14,7 +14,6 @@
         <title>FH | Weather</title>
     </head>
     <body>
-        <div class="overlay"></div>
         <div class="wrapper">
             <header class="header">
                 <div class="header__container container">
@@ -36,6 +35,7 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="search__backdrop"></div>
                     <div class="lang">
                         <button class="lang__btn lang__btn_selected">
                             EN
@@ -245,33 +245,15 @@
                     </div>
                     <div class="pagination">
                         <img class="pagination__left-icon" src="../assets/arrow-left.svg">
-                        <img class="pagination__dot-icon"src="../assets/dot.svg">
-                        <img class="pagination__dot-icon" src="../assets/dot.svg">
+                        <svg class="pagination__dot-icon" width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="5" cy="5.00006" r="5" fill="#6596B9"/>
+                        </svg>
+                        <img class="pagination__dot-icon"src="../assets/dot.svg">                            
                         <img class="pagination__dot-icon" src="../assets/dot.svg">
                         <img class="pagination__right-icon" src="../assets/arrow-right.svg">
                     </div>
                 </div>
             </main>
         </div>
-        <script>
-            const search = document.querySelector('.search');
-            const searchInput = document.querySelector('.search__input');
-            const dropdown = document.querySelector('.search__dropdown');
-            const overlay = document.querySelector('.overlay');
-
-            searchInput.addEventListener('focus', () => {
-                search.classList.add('active');
-                overlay.style.display = 'block';
-                dropdown.style.display = 'block';
-                document.body.style.overflow = 'hidden';
-            });
-
-            searchInput.addEventListener('blur', () => {
-                search.classList.remove('active');
-                overlay.style.display = 'none';
-                dropdown.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            });
-        </script>
     </body>
 </html>
