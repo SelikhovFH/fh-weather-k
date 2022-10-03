@@ -1,7 +1,19 @@
+/* COMMON */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --light-blue: #9fbed4;
+  --blue: #6596b9;
+  --dark-blue: #4f7590;
+  --navy: #4f7591;
+  --dark-navy: #3d4e5e;
+  --light-gray: #cfdae2;
+  --gray: #adb9c2;
 }
 
 .container {
@@ -10,32 +22,59 @@
   padding: 0 80px;
 }
 
+.button {
+  padding: 16px 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--blue);
+  color: #fff;
+  font-family: 'Mulish';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 2px 3px 9px rgba(101, 150, 185, 0.25);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.button:active {
+  background-color: var(--navy);
+}
+
+.button:disabled {
+  background-color: var(--light-gray);
+  color: var(--gray);
+}
+
 /* HEADER */
 
 .header {
-  padding: 32px 0;
+  margin-top: 32px;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72px;
 }
 
 .search {
   display: flex;
+  justify-content: space-between;
   position: relative;
   width: 50%;
   padding: 16px 32px;
-  border: 1px solid #6596B9;
+  border: 1px solid var(--blue);
   border-radius: 30px;
   background-color: #fff;
   z-index: 1000;
 }
 
 .search__input {
-  flex: 1;
+  width: 90%;
   border: none;
   outline: none;
   font-family: 'Montserrat';
@@ -60,10 +99,9 @@
   position: absolute;
   width: 100%;
   padding: 28px 0;
-  top: 72px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid #6596B9;
+  top: 100%;
+  left: 0;
+  border: 1px solid var(--blue);
   border-radius: 30px;
   background-color: #fff;
   font-family: 'Mulish';
@@ -91,38 +129,51 @@
 }
 
 .dropdown__item:hover {
-  background-color: #9fbed4;
+  background-color: var(--light-blue);
   color: #fff;
   cursor: pointer;
 }
 
 .lang__btn {
-  width: 99px;
-  padding: 14px 0;
-  border: 1px solid #6596B9;
+  padding: 14px 34px;
+  border: 1px solid var(--light-blue);
   border-radius: 30px;
+  background-color: #fff;
+  color: var(--light-blue);
+  outline: none;
   font-family: 'Montserrat';
   font-size: 20px;
-  background-color: #fff;
-  color: #9FBED4;
-  outline: none;
+  font-weight: 300;
+  line-height: 24px;
   cursor: pointer;
 }
 
-.lang__btn:first-child {
+.lang__btn:not(:active):hover, .lang__btn:not(:disabled):hover {
+  box-shadow: 2px 3px 9px rgba(101, 150, 185, 0.25);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.lang__btn_selected, .lang__btn:active {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.lang__btn:not(.lang__btn:last-child) {
   margin-right: 26px;
 }
 
-.lang__btn_selected, .lang__btn:hover {
-  background-color: #6596B9;
-  color: #fff;
+.lang__btn:disabled {
+  border: none;
+  background-color: var(--light-gray);
+  color: var(--gray);
+  cursor: not-allowed;
 }
  
 
 /* MAIN */
 
-.main {
-  margin: 64px 0;
+.main, .pagination, .subscription, .footer {
+  margin-top: 88px;
 }
 
 .main__container {
@@ -156,7 +207,7 @@
 }
 
 .card_add-new {
-  border: 1px dashed #6596B9;
+  border: 1px dashed var(--blue);
   color: #6F6E6E;
   cursor: pointer;
   font-family: 'Mulish';
@@ -302,26 +353,14 @@
 }
 
 .card__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
   margin-top: 32px;
-  padding: 16px 40px;
   transform: translateY(50%);
-  background-color: #6596B9;
-  border-radius: 30px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 25px;
-  cursor: pointer;
 }
 
 .pagination {
   display: flex;
   align-self: center;
   align-items: center;
-  margin-top: 72px;
 }
 
 .pagination__dot-icon {
@@ -345,7 +384,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 88px;
   width: 100%;
 }
 
@@ -354,7 +392,7 @@
   font-size: 40px;
   font-weight: 400;
   line-height: 50px;
-  color: #6596B9;
+  color: var(--blue);
 }
 
 .subscription__form {
@@ -364,7 +402,7 @@
   width: 50%;
   margin-top: 56px;
   padding-left: 36px;
-  border: 1px solid #6596B9;
+  border: 1px solid var(--blue);
   border-radius: 30px;
 }
 
@@ -384,23 +422,9 @@
   color: #A19F9F;
 }
 
-.subscription__submit-btn {
-  padding: 16px 40px;
-  border: none;
-  border-radius: 30px;
-  background-color: #6596B9;
-  color: #fff;
-  outline: none;
-  font-family: 'Mulish';
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 25px;
-  cursor: pointer;
-}
-
 .footer {
   padding: 106px 0;
-  background-color: #3D4E5E;
+  background-color: var(--dark-navy);
   color: #fff;
   font-family: 'Mulish';
   font-size: 22px;
