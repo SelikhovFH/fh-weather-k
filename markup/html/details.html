@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/details.css">
+
+        <title>FH Weather | San Francisco</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container container">
+                    <div class="header__logo">
+                        <img src="../assets/weather_logo.svg" alt="Logo" title="FH Logo">
+                    </div>
+                    <div class="search">
+                        <input class="search__input" type="text" size="45" placeholder="Enter the name of the city, region, or country">
+                        <img class="search__icon" src="../assets/search.svg" alt="Search">
+                        <ul class="search__dropdown">
+                            <li class="dropdown__item">
+                                <p class="item__text">
+                                    <b>City</b>, region, country
+                                </p>
+                            </li>
+                            <li class="dropdown__item">
+                                <p class="item__text">
+                                    <b>City</b>, region, country
+                                </p>
+                            </li>
+                            <li class="dropdown__item">
+                                <p class="item__text">
+                                    <b>City</b>, region, country
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search__backdrop"></div>
+                    <div class="lang">
+                        <button class="lang__btn lang__btn_selected">
+                            EN
+                        </button>
+                        <button class="lang__btn">
+                            UA
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <main class="main">
+            <div class="main__container container">
+                <section class="jumbotron">
+                    <div class="jumbotron__weather">
+                        <h1 class="weather__city-name">San Francisco</h1>
+                        <p class="weather__temperature">28°C</p>
+                        <p class="weather__precipitation">Cloudy</p>
+                    </div>
+                    <div class="jumbotron__datetime">
+                        <p class="datetime__text">12:00, Friday</p>
+                    </div>
+                </section>
+                <section class="hourly-forecast">
+                    <div class="hourly-forecast__title">
+                        <img class="title__icon" src="../assets/clock.svg">
+                        <h2 class="heading">Hourly forecast</h2>
+                    </div>
+                    <div class="hourly-forecast__weather-cards">
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                Now
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                13:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                14:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                15:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                16:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                17:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/sunny.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                18:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/cloudy.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                19:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/sunny.svg">
+                                <p class="weather-card__temperature">27°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                19:55
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/sunset.svg">
+                                <p class="weather-card__temperature">Sunset</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                20:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/night.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                        <div class="weather-card">
+                            <p class="weather-card__time">
+                                21:00
+                            </p>
+                            <div class="weather-card__body">
+                                <img class="weather-card__icon" src="../assets/night.svg">
+                                <p class="weather-card__temperature">28°C</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="weather-indicators">
+                    <div class="weather-indicators__cards">
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/thermometer.svg">
+                                <p class="heading">Feels like</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_feels">28°C</p>
+                                <p class="indicator-card__secondary-text indicator-card__main-secondary_feels">Feels almost the same</p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/vane.svg">
+                                <p class="heading">Wind</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <img class="compass-icon" src="../assets/compass.svg">
+                                <img class="compass-arrow-icon" src="../assets/compass-arrow.svg">
+                                <div class="wind-compass__text">
+                                    <p>2</p>
+                                    <p>km/h</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/sun.svg">
+                                <p class="heading">UV Index</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="uv-card__main-text">
+                                    0<br>
+                                    Low
+                                </p>
+                                <div class="uv-card__slider">
+                                    <div class="slider__ball"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/humidity.svg">
+                                <p class="heading">Humidity</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_humidity">
+                                    84%
+                                </p>
+                                <p class="indicator-card__secondary-text indicator-card__secondary-text_humidity">
+                                    Dew point now: 14
+                                </p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/sunrise.svg">
+                                <p class="heading">Sunrise</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_sunrise">
+                                    7:36
+                                </p>
+                                <div class="indicator-card__sunrise-chart">
+                                    <img class="sunrise-chart__parabola" src="../assets/parabola.svg">
+                                    <hr class="sunrise-chart__axis">
+                                </div>
+                                <p class="indicator-card__secondary-text_sunset">
+                                    Sunset: 19:55
+                                </p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/eye.svg">
+                                <p class="heading">Visibility</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_visibility">
+                                    24 km
+                                </p>
+                                <p class="indicator-card__secondary-text indicator-card__secondary-text_visibility">
+                                    Completely clear sky
+                                </p>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/compass-2.svg">
+                                <p class="heading">Pressure</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <img class="pressure-indicator" src="../assets/pressure-indicator.svg">
+                                <img class="pressure-arrow-icon" src="../assets/pressure-arrow.svg">
+                                <div class="pressure-text">
+                                    <p>1017</p>
+                                    <p>hPa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="indicator-card">
+                            <div class="indicator-card__heading">
+                                <img class="indicator-card__icon" src="../assets/cloud-2.svg">
+                                <p class="heading">Cloudiness</p>
+                            </div>
+                            <div class="indicator-card__body">
+                                <p class="indicator-card__main-text indicator-card__main-text_cloudiness">
+                                    20%
+                                </p>
+                                <p class="indicator-card__secondary-text indicator-card__secondary-text_cloudiness">
+                                    Medium cloudiness
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="weather-charts">
+                    <div class="charts-tooltip">
+                        <div class="charts-tooltip__header">
+                            <div>
+                                <span class="charts-tooltip__header-text charts-tooltip__header-text_primary">21°</spanc>
+                                <span class="charts-tooltip__header-text charts-tooltip__header-text_secondary">16°</span>
+                            </div>
+                            <img class="charts-tooltip__icon" src="../assets/rainy.svg">
+                        </div>
+                        <div class="charts-tooltip__body">
+                            <p class="charts-tooltip__body-text">
+                                On Monday, the minimum air temperature will be 16° at 00:00. The air will warm up to 22° between 14:00 and 15:00.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="chart-selector">
+                        <div class="chart-selector__item chart-selector__item_active">
+                            <svg class="chart-selector__icon" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.938" fill-rule="evenodd" clip-rule="evenodd" d="M16.2891 1.21094C17.9407 1.00399 19.1516 1.62899 19.9219 3.08594C19.9861 3.26473 20.0382 3.44702 20.0782 3.63282C20.168 12.3291 20.2332 21.027 20.2735 29.7266C22.0364 31.4966 22.4661 33.5539 21.5625 35.8984C20.3725 38.0105 18.5626 38.935 16.1329 38.6719C13.8452 38.1811 12.478 36.7879 12.0313 34.4922C11.7985 32.5631 12.3975 30.9485 13.8282 29.6484C13.8542 20.9766 13.8803 12.3047 13.9063 3.63282C14.2461 2.36865 15.0404 1.56135 16.2891 1.21094ZM16.5235 2.53907C17.8198 2.41729 18.5881 2.99021 18.8282 4.25782C18.8542 12.9557 18.8803 21.6537 18.9063 30.3516C20.5519 31.6163 21.0467 33.2309 20.3907 35.1953C19.2968 37.1663 17.6693 37.8043 15.5079 37.1094C13.8766 36.23 13.1605 34.8628 13.3594 33.0078C13.5745 31.8738 14.1604 30.9884 15.1172 30.3516C15.1823 21.5235 15.2214 12.6954 15.2344 3.86719C15.4703 3.22779 15.9 2.78508 16.5235 2.53907ZM16.5235 32.5391C17.7563 32.3788 18.2902 32.8996 18.125 34.1016C17.5069 35.0185 16.8038 35.0966 16.0157 34.3359C15.6418 33.5706 15.8111 32.9716 16.5235 32.5391Z" fill="white"/>
+                                <path opacity="0.974" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 6.83593C23.1383 6.82292 24.5966 6.83594 26.0547 6.875C26.4467 7.16575 26.5118 7.51732 26.25 7.92968C26.1914 7.97859 26.1263 8.01765 26.0547 8.04687C24.5963 8.09898 23.1381 8.09898 21.6797 8.04687C21.2663 7.64335 21.2663 7.2397 21.6797 6.83593Z" fill="white"/>
+                                <path opacity="0.965" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 9.33595C22.7217 9.3229 23.7634 9.33595 24.8047 9.37501C25.1967 9.66579 25.2618 10.0174 25 10.4297C24.9414 10.4786 24.8763 10.5177 24.8047 10.5469C23.7631 10.599 22.7213 10.599 21.6797 10.5469C21.2663 10.1434 21.2663 9.7397 21.6797 9.33595Z" fill="white"/>
+                                <path opacity="0.974" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 11.8359C23.1383 11.8229 24.5966 11.8359 26.0547 11.875C26.4467 12.1658 26.5118 12.5174 26.25 12.9297C26.1914 12.9786 26.1263 13.0177 26.0547 13.0469C24.5963 13.099 23.1381 13.099 21.6797 13.0469C21.2663 12.6434 21.2663 12.2397 21.6797 11.8359Z" fill="white"/>
+                                <path opacity="0.965" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 14.3359C22.7217 14.3229 23.7634 14.3359 24.8047 14.375C25.1967 14.6658 25.2618 15.0174 25 15.4297C24.9414 15.4786 24.8763 15.5177 24.8047 15.5469C23.7631 15.599 22.7213 15.599 21.6797 15.5469C21.2663 15.1434 21.2663 14.7397 21.6797 14.3359Z" fill="white"/>
+                                <path opacity="0.938" fill-rule="evenodd" clip-rule="evenodd" d="M16.6797 16.211C17.1941 16.0835 17.5195 16.2658 17.6562 16.7578C17.6953 21.6015 17.7084 26.4452 17.6953 31.2891C18.8656 31.6267 19.4906 32.408 19.5703 33.6328C19.2832 35.6517 18.1373 36.472 16.1328 36.0938C14.8512 35.497 14.3173 34.4945 14.5312 33.086C14.7722 32.1027 15.3842 31.5038 16.3672 31.2891C16.3541 26.3671 16.3672 21.4452 16.4062 16.5235C16.5137 16.4293 16.6048 16.3252 16.6797 16.211ZM16.5234 32.5391C15.8111 32.9716 15.6418 33.5706 16.0156 34.336C16.8037 35.0967 17.5069 35.0185 18.125 34.1016C18.2901 32.8996 17.7562 32.3788 16.5234 32.5391Z" fill="white"/>
+                                <path opacity="0.974" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 16.8359C23.1383 16.8229 24.5966 16.8359 26.0547 16.875C26.4467 17.1658 26.5118 17.5174 26.25 17.9297C26.1914 17.9786 26.1263 18.0177 26.0547 18.0469C24.5963 18.099 23.1381 18.099 21.6797 18.0469C21.2663 17.6434 21.2663 17.2397 21.6797 16.8359Z" fill="white"/>
+                                <path opacity="0.965" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 19.3359C22.7217 19.3229 23.7634 19.3359 24.8047 19.375C25.1967 19.6658 25.2618 20.0174 25 20.4297C24.9414 20.4786 24.8763 20.5177 24.8047 20.5469C23.7631 20.599 22.7213 20.599 21.6797 20.5469C21.2663 20.1434 21.2663 19.7397 21.6797 19.3359Z" fill="white"/>
+                                <path opacity="0.974" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 21.8359C23.1383 21.8229 24.5966 21.8359 26.0547 21.875C26.4467 22.1658 26.5118 22.5174 26.25 22.9297C26.1914 22.9786 26.1263 23.0177 26.0547 23.0469C24.5963 23.099 23.1381 23.099 21.6797 23.0469C21.2663 22.6434 21.2663 22.2397 21.6797 21.8359Z" fill="white"/>
+                                <path opacity="0.965" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 24.3359C22.7217 24.3229 23.7634 24.3359 24.8047 24.375C25.1967 24.6658 25.2618 25.0174 25 25.4297C24.9414 25.4786 24.8763 25.5177 24.8047 25.5469C23.7631 25.599 22.7213 25.599 21.6797 25.5469C21.2663 25.1434 21.2663 24.7397 21.6797 24.3359Z" fill="white"/>
+                                <path opacity="0.974" fill-rule="evenodd" clip-rule="evenodd" d="M21.6797 26.8359C23.1383 26.8229 24.5966 26.8359 26.0547 26.875C26.4467 27.1658 26.5118 27.5174 26.25 27.9297C26.1914 27.9786 26.1263 28.0177 26.0547 28.0469C24.5963 28.099 23.1381 28.099 21.6797 28.0469C21.2663 27.6434 21.2663 27.2397 21.6797 26.8359Z" fill="white"/>
+                            </svg>  
+                        </div>
+                        <div class="chart-selector__item">
+                            <svg class="chart-selector__icon" width="25" height="38" viewBox="0 0 25 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.932" fill-rule="evenodd" clip-rule="evenodd" d="M12.1797 0.210949C12.5187 0.159863 12.8182 0.237988 13.0781 0.445324C16.1147 4.74463 18.797 9.27587 21.125 14.0391C22.4091 16.7195 23.3987 19.506 24.0938 22.3985C24.9761 26.7078 24.0125 30.536 21.2031 33.8828C17.3303 37.7448 12.8381 38.6953 7.72656 36.7344C3.16766 34.3912 0.797852 30.6412 0.617188 25.4844C0.630695 23.9059 0.852031 22.3564 1.28125 20.836C1.91945 18.6345 2.7268 16.4992 3.70312 14.4297C6.11766 9.41384 8.9432 4.67427 12.1797 0.210949ZM12.4922 2.00782C15.8602 6.83157 18.7377 11.9617 21.125 17.3985C22.2241 19.9327 22.8881 22.576 23.1172 25.3281C22.9654 29.9585 20.856 33.344 16.7891 35.4844C12.1472 37.2831 8.09766 36.3846 4.64062 32.7891C2.43391 30.1356 1.57453 27.0888 2.0625 23.6485C2.58781 20.7964 3.47328 18.062 4.71875 15.4453C6.9743 10.7493 9.56547 6.27012 12.4922 2.00782Z" fill="#6596B9"/>
+                            </svg>
+                        </div>
+                        <div class="chart-selector__item">
+                            <svg class="chart-selector__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.978" fill-rule="evenodd" clip-rule="evenodd" d="M19.6485 1.21095C19.8584 1.19813 20.0667 1.21115 20.2735 1.25001C20.4167 1.28907 20.5078 1.38022 20.5469 1.52345C20.599 3.39845 20.599 5.27345 20.5469 7.14845C20.4274 7.38407 20.2321 7.48824 19.961 7.46095C19.6898 7.48824 19.4945 7.38407 19.375 7.14845C19.3229 5.27345 19.3229 3.39845 19.375 1.52345C19.4289 1.3789 19.52 1.27473 19.6485 1.21095Z" fill="#6596B9"/>
+                                <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M6.52355 6.21096C6.7953 6.18629 7.05572 6.22535 7.3048 6.32815C8.56785 7.59117 9.83082 8.85416 11.0939 10.1172C11.2986 10.5257 11.2336 10.8773 10.8986 11.1719C10.6279 11.2357 10.3675 11.2096 10.1173 11.0938C8.85426 9.83072 7.59126 8.56776 6.32824 7.30471C6.12652 6.88438 6.19163 6.5198 6.52355 6.21096Z" fill="#6596B9"/>
+                                <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M32.7736 6.21092C33.5989 6.16362 33.8723 6.5282 33.5939 7.30467C32.3309 8.56772 31.0679 9.83069 29.8049 11.0937C28.8543 11.3932 28.5289 11.0677 28.8283 10.1172C30.1352 8.79717 31.4504 7.49512 32.7736 6.21092Z" fill="#6596B9"/>
+                                <path opacity="0.931" fill-rule="evenodd" clip-rule="evenodd" d="M18.6329 8.71096C23.4738 8.40346 27.1847 10.2785 29.7657 14.336C31.3352 17.2506 31.6477 20.2974 30.7032 23.4766C29.0669 27.8729 25.9288 30.438 21.2891 31.1719C16.4457 31.5171 12.7348 29.6552 10.1563 25.586C8.58678 22.6706 8.27428 19.6238 9.21881 16.4453C10.8681 12.0481 14.0062 9.46994 18.6329 8.71096ZM18.7891 10.0391C23.1224 9.76401 26.4166 11.4567 28.6719 15.1172C30.2865 18.3464 30.2865 21.5756 28.6719 24.8047C25.9693 29.0126 22.1542 30.5881 17.2266 29.5313C13.1598 28.1723 10.777 25.3728 10.0782 21.1328C9.77233 16.7307 11.5041 13.4104 15.2735 11.1719C16.3964 10.6109 17.5683 10.2333 18.7891 10.0391Z" fill="#6596B9"/>
+                                <path opacity="0.978" fill-rule="evenodd" clip-rule="evenodd" d="M1.52329 19.3359C3.39847 19.3229 5.27347 19.3359 7.14829 19.375C7.29152 19.4141 7.38267 19.5052 7.42173 19.6484C7.47382 19.8568 7.47382 20.0651 7.42173 20.2734C7.38267 20.4167 7.29152 20.5078 7.14829 20.5469C5.27329 20.599 3.39829 20.599 1.52329 20.5469C1.28767 20.4274 1.1835 20.2321 1.21079 19.9609C1.19379 19.6824 1.29796 19.4741 1.52329 19.3359Z" fill="#6596B9"/>
+                                <path opacity="0.978" fill-rule="evenodd" clip-rule="evenodd" d="M32.7733 19.3359C34.6484 19.3229 36.5234 19.3359 38.3983 19.375C38.5415 19.4141 38.6327 19.5052 38.6717 19.6484C38.7238 19.8568 38.7238 20.0651 38.6717 20.2734C38.6327 20.4167 38.5415 20.5078 38.3983 20.5469C36.5233 20.599 34.6483 20.599 32.7733 20.5469C32.5377 20.4274 32.4335 20.2321 32.4608 19.9609C32.4438 19.6824 32.548 19.4741 32.7733 19.3359Z" fill="#6596B9"/>
+                                <path opacity="0.899" fill-rule="evenodd" clip-rule="evenodd" d="M10.2734 28.7109C11.0987 28.6637 11.3721 29.0282 11.0938 29.8047C9.8307 31.0677 8.56773 32.3307 7.30469 33.5937C6.70187 33.9056 6.31124 33.7363 6.13281 33.0859C6.19029 32.9265 6.2554 32.7702 6.32812 32.6172C7.63502 31.2972 8.95016 29.9951 10.2734 28.7109Z" fill="#6596B9"/>
+                                <path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M29.0236 28.711C29.2953 28.6863 29.5557 28.7253 29.8048 28.8282C31.0679 30.0912 32.3308 31.3542 33.5939 32.6172C33.7986 33.0257 33.7336 33.3773 33.3986 33.6719C33.1279 33.7357 32.8675 33.7096 32.6173 33.5938C31.3543 32.3307 30.0913 31.0678 28.8282 29.8047C28.6265 29.3844 28.6916 29.0198 29.0236 28.711Z" fill="#6596B9"/>
+                                <path opacity="0.978" fill-rule="evenodd" clip-rule="evenodd" d="M19.6485 32.4609C19.8584 32.4481 20.0667 32.4612 20.2735 32.5C20.4167 32.5391 20.5078 32.6302 20.5469 32.7734C20.599 34.6484 20.599 36.5234 20.5469 38.3984C20.4274 38.6341 20.2321 38.7382 19.961 38.7109C19.6898 38.7382 19.4945 38.6341 19.375 38.3984C19.3229 36.5234 19.3229 34.6484 19.375 32.7734C19.4289 32.6289 19.52 32.5247 19.6485 32.4609Z" fill="#6596B9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="weather-charts__title">
+                        <img class="title__icon" src="../assets/calendar.svg">
+                        <p class="heading">Weekly forecast</p>
+                    </div>
+                    <img class="chart" src="../assets/chart.svg">
+                </section>
+                <section class="subscription">
+                    <h2 class="subscription__title">Subscribe to our e-mail newsletter</h2>
+                    <form class="subscription__form">
+                        <input class="subscription__email-input" type="email" placeholder="E-mail">
+                        <button class="button" type="submit">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <ul class="footer-links">
+                    <li class="footer-links__item">
+                        <a>Privacy policy</a>
+                    </li>
+                    <li class="footer-links__item">
+                        <a>Agreement</a>
+                    </li>
+                    <li class="footer-links__item">
+                        <a>Feedback</a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    <span class="copyright__year">@ 2022</span>
+                    <span class="copyright__name">Weather FH Solutions</span>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

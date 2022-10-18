@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mulish:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/weather.css">
+        
+        <title>FH Weather | Home</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container container">
+                    <div class="logo">
+                        <img src="../assets/weather_logo.svg" alt="Logo">
+                    </div>
+                    <div class="search">
+                        <input class="search__input" type="text" size="45" placeholder="Enter the name of the city, region, or country">
+                        <img class="search__icon" src="../assets/search.svg" alt="Search">
+                        <ul class="search__dropdown">
+                            <li class="dropdown__item">
+                                <p class="item__text"><b>City</b>, region, country</p>
+                            </li>
+                            <li class="dropdown__item">
+                                <p class="item__text"><b>City</b>, region, country</p>
+                            </li>
+                            <li class="dropdown__item">
+                                <p class="item__text"><b>City</b>, region, country</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search__backdrop"></div>
+                    <div class="lang">
+                        <button class="lang__btn lang__btn_selected">
+                            EN
+                        </button>
+                        <button class="lang__btn">
+                            UA
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__container container">
+                    <section class="section weather-cards">
+                        <div class="cards__container">
+                            <div class="card">
+                                <div class="card__weather">
+                                    <h2 class="weather__city">San Francisco</h2>
+                                    <p class="weather__time">Tuesday, 11:00</p>
+                                    <h1 class="weather__temperature">29</h1>
+                                    <p class="weather_precipitation">Cloudy</p>
+                                </div>
+                                <div class="card__hours">
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            Now
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/sunny.svg" alt="Sunny">
+                                            <p class="hour__temperature">29°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            12:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/cloud.svg" alt="Sunny">
+                                            <p class="hour__temperature">30°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            13:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/cloudy.svg" alt="Sunny">
+                                            <p class="hour__temperature">32°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            14:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/rainy.svg" alt="Sunny">
+                                            <p class="hour__temperature">32°C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__percentage">
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Wind</p>
+                                    </div>
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Humidity</p>
+                                    </div>
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Precipitation</p>
+                                    </div>
+                                </div>
+                                <button class="button card__btn">
+                                    More
+                                </button>
+                            </div>
+                            <div class="card">
+                                <div class="card__weather">
+                                    <h2 class="weather__city">Seattle</h2>
+                                    <p class="weather__time">Tuesday, 11:00</p>
+                                    <h1 class="weather__temperature">29</h1>
+                                    <p class="weather_precipitation">Cloudy</p>
+                                </div>
+                                <div class="card__hours">
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            Now
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/sunny.svg" alt="Sunny">
+                                            <p class="hour__temperature">29°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            12:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/cloud.svg" alt="Sunny">
+                                            <p class="hour__temperature">30°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            13:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/cloudy.svg" alt="Sunny">
+                                            <p class="hour__temperature">32°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            14:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/rainy.svg" alt="Sunny">
+                                            <p class="hour__temperature">32°C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__percentage">
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Wind</p>
+                                    </div>
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Humidity</p>
+                                    </div>
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Precipitation</p>
+                                    </div>
+                                </div>
+                                <button class="button card__btn">
+                                    More
+                                </button>
+                            </div>
+                            <div class="card">
+                                <div class="card__weather">
+                                    <h2 class="weather__city">Portland</h2>
+                                    <p class="weather__time">Tuesday, 11:00</p>
+                                    <h1 class="weather__temperature">29</h1>
+                                    <p class="weather_precipitation">Cloudy</p>
+                                </div>
+                                <div class="card__hours">
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            Now
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/sunny.svg" alt="Sunny">
+                                            <p class="hour__temperature">29°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            12:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/cloud.svg" alt="Sunny">
+                                            <p class="hour__temperature">30°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            13:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/cloudy.svg" alt="Sunny">
+                                            <p class="hour__temperature">32°C</p>
+                                        </div>
+                                    </div>
+                                    <div class="hour__container">
+                                        <p class="hour__title">
+                                            14:00
+                                        </p>
+                                        <div class="hour__card">
+                                            <img class="hour__weather-icon" src="../assets/rainy.svg" alt="Sunny">
+                                            <p class="hour__temperature">32°C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__percentage">
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Wind</p>
+                                    </div>
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Humidity</p>
+                                    </div>
+                                    <div class="percentage__section">
+                                        <p class="percentage__number">20%</p>
+                                        <p class="percentage__type">Precipitation</p>
+                                    </div>
+                                </div>
+                                <button class="button card__btn">
+                                    More
+                                </button>
+                            </div>
+                            <div class="card card_add-new">
+                                <img class="card__icon-plus" src="../assets/plus.svg">
+                                <p>Add new place</p>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <img class="pagination__left-icon" src="../assets/arrow-left.svg">
+                            <svg class="pagination__dot-icon" width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5" cy="5.00006" r="5" fill="#6596B9"/>
+                            </svg>
+                            <img class="pagination__dot-icon"src="../assets/dot.svg">                            
+                            <img class="pagination__dot-icon" src="../assets/dot.svg">
+                            <img class="pagination__right-icon" src="../assets/arrow-right.svg">
+                        </div>
+                    </section>
+                    <section class="subscription">
+                        <h2 class="subscription__title">Subscribe to our e-mail newsletter</h2>
+                        <form class="subscription__form">
+                            <input class="subscription__email-input" type="email" placeholder="E-mail">
+                            <button class="button" type="submit">Subscribe</button>
+                        </form>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <ul class="footer-links">
+                        <li class="footer-links__item">
+                            <a>Privacy policy</a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a>
+                                Agreement
+                            </a>
+                        </li>
+                        <li class="footer-links__item">
+                            <a>
+                                Feedback
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright">
+                        <span class="copyright__year">@ 2022</span>
+                        <span class="copyright__name">Weather FH Solutions</span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
