@@ -4,12 +4,14 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Subscription from '../../components/Subscription';
 
+import styles from './Weather.module.scss';
+
 const Weather: React.FC = () => {
   return (
     <div>
       <Header />
-      <div>Weather Page</div>
-      <Subscription />
+      {/* <CardSlider /> */}
+      <Subscription className={styles.section} />
       <Footer />
     </div>
   );

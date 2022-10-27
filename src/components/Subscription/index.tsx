@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 
 import styles from './Subscription.module.scss';
 
-const Subscription: React.FC = () => {
+const Subscription: React.FC<HTMLAttributes<HTMLDivElement>> = ({
+  className,
+}) => {
   return (
-    <div className={styles.subscription}>
+    <div className={`${styles.subscription} ${className}`}>
       <h2 className={styles.subscription__title}>
         Subscribe to our e-mail newsletter
       </h2>
