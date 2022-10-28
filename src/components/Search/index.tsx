@@ -11,7 +11,7 @@ const Search: React.FC = () => {
     <PlacesAutocomplete
       value={searchValue}
       onChange={setSearchValue}
-      debounce={1500}
+      debounce={500}
     >
       {({ getInputProps, suggestions, getSuggestionItemProps }) => (
         <>
