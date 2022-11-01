@@ -1,11 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 
-import Weather from './pages/Weather';
+import Layout from './layouts/Layout';
+import Home from './pages/Home';
 
 const App = () => {
   return (
     <Routes>
-      <Route index element={<Weather />} />
+      <Route path="/" element={<Layout />}>
+        <Route path="" element={<Home />} />
+      </Route>
     </Routes>
   );
 };

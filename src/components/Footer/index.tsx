@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 
 import styles from './Footer.module.scss';
 
-const Footer: React.FC = () => {
+const Footer: React.FC<HTMLAttributes<HTMLDivElement>> = () => {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.footer__container} ${styles.container}`}>
