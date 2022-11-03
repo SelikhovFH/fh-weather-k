@@ -63,6 +63,11 @@
 
     &__item {
         padding: 10px 32px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
     }
     
     &__item:hover {
