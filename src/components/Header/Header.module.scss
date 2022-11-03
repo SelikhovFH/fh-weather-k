@@ -1,0 +1,55 @@
+.header {
+    margin-top: 32px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1680px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+}
+
+.lang__btn {
+    padding: 14px 34px;
+    border: 1px solid #9fbed4;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #9fbed4;
+    outline: none;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    cursor: pointer;
+
+    &:not(:active):hover, &:not(:disabled):hover {
+        box-shadow: 2px 3px 9px rgba(101, 150, 185, 0.25);
+        transition: box-shadow 0.1s ease-in-out;
+    }
+
+    &_selected, &:active {
+        background-color: #6596b9;
+        color: #fff;
+    }
+
+    &:not(&:last-child) {
+        margin-right: 26px;
+    }
+
+    &:disabled {
+        border: none;
+        background-color: #cfdae2;
+        color: #adb9c2;
+        cursor: not-allowed;
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
