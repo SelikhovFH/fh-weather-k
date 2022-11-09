@@ -56,6 +56,7 @@ export interface IWeatherResponse {
     sunrise: number;
     sunset: number;
   };
+  timezone: number;
   id?: number | string;
   name?: string;
   cod: string;

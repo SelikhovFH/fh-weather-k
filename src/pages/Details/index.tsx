@@ -28,9 +28,10 @@ const Details: React.FC = () => {
   return (
     <div className="container">
       <Jumbotron
-        temp={weather?.main.temp as number}
-        weather={weather?.weather[0].main as string}
         name={place?.name as string}
+        temp={weather?.main.temp as number}
+        timezone={weather?.timezone as number}
+        weather={weather?.weather[0].main as string}
         backgroundUrl={place?.photos[0] as string}
       />
       <Subscription />

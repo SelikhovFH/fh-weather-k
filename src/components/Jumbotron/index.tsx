@@ -8,12 +8,15 @@ const DEFAULT_PHOTO_URL =
 interface IJumbotronProps extends HTMLAttributes<HTMLDivElement> {
   name: string;
   temp: number;
+  timezone: number;
   weather: string;
   backgroundUrl: string;
 }
 
-const getDateTimeString = (locale: string) => {
-  const date: Date = new Date();
+const getTimeString = (locale: string, timezone: number) => {
+  const date: Date = new Date(
+    Date.now() + new Date().getTimezoneOffset() * 60 * 1000 + timezone * 1000
+  );
   const time: string = date.toTimeString().slice(0, 5);
   const day: string = date.toLocaleDateString(locale, {
     weekday: 'long',
@@ -23,9 +26,10 @@ const getDateTimeString = (locale: string) => {
 };
 
 const Jumbotron: React.FC<IJumbotronProps> = ({
-  temp,
-  weather,
   name,
+  temp,
+  timezone,
+  weather,
   backgroundUrl = DEFAULT_PHOTO_URL,
 }) => {
   return (
@@ -44,7 +48,9 @@ const Jumbotron: React.FC<IJumbotronProps> = ({
         <p className={styles.weather__precipitation}>{weather}</p>
       </div>
       <div className={styles.jumbotron__datetime}>
-        <p className={styles.datetime__text}>{getDateTimeString('en-EN')}</p>
+        <p className={styles.datetime__text}>
+          {getTimeString('en-EN', timezone)}
+        </p>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Search from '../Search';
 
@@ -10,7 +11,9 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={`${styles.header__container} ${styles.container}`}>
         <div className={styles.logo}>
-          <img src={logo} alt="Logo" />
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
         <Search />
         <div>
