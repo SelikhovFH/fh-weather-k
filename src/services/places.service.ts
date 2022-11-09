@@ -1,32 +1,42 @@
-const service = new google.maps.places.PlacesService(
-  document.createElement('div')
-);
+import { IPlaceDetailsResponse } from '../types';
 
-const getPlacePhoto = (placeId: string, width: number) => {
-  return new Promise((resolve, reject) => {
-    const request = {
-      placeId,
-      fields: ['photos'],
-    };
+class PlacesService {
+  private service: google.maps.places.PlacesService;
 
-    service.getDetails(request, (place, status) => {
-      if (
-        status === google.maps.places.PlacesServiceStatus.OK &&
-        place?.photos &&
-        place.photos.length > 0
-      ) {
-        const response = {
-          photoUrl: place.photos[0].getUrl({
-            maxWidth: width,
-          }),
-        };
+  constructor() {
+    this.service = new google.maps.places.PlacesService(
+      document.createElement('div')
+    );
+  }
 
-        resolve(response);
-      } else {
-        reject(status);
-      }
+  getPlaceDetails(placeId: string, width: number) {
+    return new Promise((resolve, reject) => {
+      const request = {
+        placeId,
+        fields: ['place_id', 'name', 'geometry', 'photos'],
+      };
+
+      this.service.getDetails(request, (place, status) => {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          const response: IPlaceDetailsResponse = {
+            placeId: place?.place_id as string,
+            name: place?.name as string,
+            location: {
+              lat: place?.geometry?.location?.lat() as number,
+              lng: place?.geometry?.location?.lng() as number,
+            },
+            photos: place?.photos?.map((photo) =>
+              photo.getUrl({ maxWidth: width })
+            ) as string[],
+          };
+
+          resolve(response);
+        } else {
+          reject(status);
+        }
+      });
     });
-  });
-};
+  }
+}
 
-export { getPlacePhoto };
+export default new PlacesService();
