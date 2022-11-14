@@ -13,6 +13,7 @@ interface IJumbotronProps extends HTMLAttributes<HTMLDivElement> {
   backgroundUrl: string;
 }
 
+// TODO: Rewrite using luxon
 const getTimeString = (locale: string, timezone: number) => {
   const date: Date = new Date(
     Date.now() + new Date().getTimezoneOffset() * 60 * 1000 + timezone * 1000
@@ -31,10 +32,11 @@ const Jumbotron: React.FC<IJumbotronProps> = ({
   timezone,
   weather,
   backgroundUrl = DEFAULT_PHOTO_URL,
+  className,
 }) => {
   return (
     <section
-      className={styles.jumbotron}
+      className={`${styles.jumbotron} ${className}`}
       style={{
         backgroundImage: `linear-gradient(0deg, rgba(79, 78, 78, 0.49), rgba(79, 78, 78, 0.49)), url(${backgroundUrl})`,
         backgroundRepeat: 'no-repeat',

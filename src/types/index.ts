@@ -1,4 +1,4 @@
-export interface IPlaceDetailsResponse {
+export interface IPlaceDetails {
   placeId: string;
   name: string;
   location: {
@@ -8,56 +8,99 @@ export interface IPlaceDetailsResponse {
   photos: string[];
 }
 
-export interface IWeatherResponse {
-  coord: {
-    lon: number;
-    lat: number;
-  };
+export interface ILocation {
+  lat: number;
+  lon: number;
+}
+
+export interface IHourlyForecast {
+  dt: number;
+  temp: number;
+  feels_like: number;
+  pressure: number;
+  humidity: number;
+  dew_point: number;
+  uvi: number;
+  clouds: number;
+  visibility: number;
+  wind_speed: number;
+  wind_deg: number;
+  wind_gust: number;
   weather: Array<{
     id: number;
     main: string;
-    icon: string;
     description: string;
+    icon: string;
   }>;
-  base: string;
-  main: {
+  pop: number;
+}
+
+export interface IWeatherForecast {
+  lat: number;
+  lon: number;
+  timezone: string;
+  timezone_offset: number;
+  current: {
+    dt: number;
+    sunrise: number;
+    sunset: number;
     temp: number;
     feels_like: number;
     pressure: number;
     humidity: number;
-    temp_min: number;
-    temp_max: number;
-    sea_level?: number;
-    grnd_level?: number;
+    dew_point: number;
+    uvi: number;
+    clouds: number;
+    visibility: number;
+    wind_speed: number;
+    wind_deg: number;
+    weather: Array<{
+      id: number;
+      main: string;
+      description: string;
+      icon: string;
+    }>;
   };
-  visibility: number;
-  wind: {
-    speed: number;
-    deg: number;
-    gust?: number | string;
-  };
-  clouds: {
-    all: number;
-  };
-  rain: {
-    '1h': number;
-    '3h': number;
-  };
-  snow: {
-    '1h': number;
-    '3h': number;
-  };
-  dt: number;
-  sys: {
-    type: string;
-    id: number;
-    message: string;
-    country: number;
+  minutely: Array<{
+    dt: number;
+    precipitation: number;
+  }>;
+  hourly: IHourlyForecast[];
+  daily: Array<{
+    dt: number;
     sunrise: number;
     sunset: number;
-  };
-  timezone: number;
-  id?: number | string;
-  name?: string;
-  cod: string;
+    moonrise: number;
+    moonset: number;
+    moon_phase: number;
+    temp: {
+      day: number;
+      min: number;
+      max: number;
+      night: number;
+      eve: number;
+      morn: number;
+    };
+    feels_like: {
+      day: number;
+      night: number;
+      eve: number;
+      morn: number;
+    };
+    pressure: number;
+    humidity: number;
+    dew_point: number;
+    wind_speed: number;
+    wind_deg: number;
+    wind_gust: number;
+    weather: Array<{
+      id: number;
+      main: string;
+      description: string;
+      icon: string;
+    }>;
+    clouds: number;
+    pop: number;
+    uvi: number;
+  }>;
 }

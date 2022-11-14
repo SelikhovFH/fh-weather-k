@@ -1,4 +1,4 @@
-import { IPlaceDetailsResponse } from '../types';
+import { IPlaceDetails } from '../types';
 
 class PlacesService {
   private service: google.maps.places.PlacesService;
@@ -9,7 +9,7 @@ class PlacesService {
     );
   }
 
-  getPlaceDetails(placeId: string, width: number) {
+  getPlaceDetails(placeId: string, width: number): Promise<IPlaceDetails> {
     return new Promise((resolve, reject) => {
       const request = {
         placeId,
@@ -18,7 +18,7 @@ class PlacesService {
 
       this.service.getDetails(request, (place, status) => {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
-          const response: IPlaceDetailsResponse = {
+          const response = {
             placeId: place?.place_id as string,
             name: place?.name as string,
             location: {

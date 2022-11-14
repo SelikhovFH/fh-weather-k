@@ -8,10 +8,6 @@ body {
   background-color: #fff;
 }
 
-.page {
-  margin: 88px 0;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -20,4 +16,8 @@ body {
   max-width: 1680px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.section {
+  margin-top: 88px;
 }

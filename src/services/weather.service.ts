@@ -1,5 +1,5 @@
 import axios, { Axios } from 'axios';
-import { IWeatherResponse } from '../types';
+import { IWeatherForecast, ILocation } from '../types';
 
 class WeatherService {
   private axios: Axios;
@@ -13,15 +13,13 @@ class WeatherService {
     this.token = process.env.REACT_APP_OPENWEATHER_API_KEY as string;
   }
 
-  async getCurrentWeather(location: {
-    lat: number;
-    lon: number;
-  }): Promise<IWeatherResponse> {
-    const { data } = await this.axios.get('/weather', {
+  async getWeatherForecast(location: ILocation): Promise<IWeatherForecast> {
+    const { data } = await this.axios.get<IWeatherForecast>('/onecall', {
       params: {
-        ...location,
-        appid: this.token,
+        lat: location.lat,
+        lon: location.lon,
         units: 'metric',
+        appid: this.token,
       },
     });
 
