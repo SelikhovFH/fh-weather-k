@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
 
@@ -18,7 +18,7 @@ const Details: React.FC = () => {
       queryFn: () => PlacesService.getPlaceDetails(placeId as string, 1920),
     }
   );
-  const { data: forecast } = useQuery<IWeatherForecast>({
+  const { data: forecast, refetch } = useQuery<IWeatherForecast>({
     queryKey: 'weather',
     queryFn: () =>
       WeatherService.getWeatherForecast({
@@ -27,6 +27,12 @@ const Details: React.FC = () => {
       }),
     enabled: !!place?.placeId,
   });
+
+  useEffect(() => {
+    if (place?.placeId) {
+      refetch();
+    }
+  }, [place, placeId, refetch]);
 
   return (
     <div className="container">
