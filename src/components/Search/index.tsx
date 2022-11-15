@@ -2,8 +2,9 @@ import React, { useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import PlacesAutocomplete from 'react-places-autocomplete';
 
+import { ReactComponent as SearchIcon } from '../../assets/search.svg';
+
 import styles from './Search.module.scss';
-import search from '../../assets/search.svg';
 
 const Search: React.FC = () => {
   const [searchValue, setSearchValue] = useState<string>('');
@@ -31,7 +32,7 @@ const Search: React.FC = () => {
                 placeholder: 'City, country or region',
               })}
             />
-            <img src={search} alt="Search" />
+            <SearchIcon />
             {suggestions.length > 0 && (
               <ul className={styles.dropdown}>
                 {suggestions.map((suggestion) => (

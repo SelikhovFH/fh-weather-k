@@ -1,13 +1,9 @@
 import React, { HTMLAttributes } from 'react';
 
 import Button from '../Button';
+import WeatherIcons from '../../assets/icons/weather';
 
 import styles from './Card.module.scss';
-
-import sunny from '../../assets/sunny.svg';
-import cloud from '../../assets/cloud.svg';
-import cloudy from '../../assets/cloudy.svg';
-import rainy from '../../assets/rainy.svg';
 
 const Card: React.FC<HTMLAttributes<HTMLDivElement>> = () => {
   return (
@@ -22,28 +18,28 @@ const Card: React.FC<HTMLAttributes<HTMLDivElement>> = () => {
         <div className={styles['hourly-forecast__container']}>
           <p className={styles['hourly-forecast__title']}>Now</p>
           <div className={styles['hourly-forecast__card']}>
-            <img src={sunny} alt="Sunny" />
+            <WeatherIcons.Sun />
             <p className={styles['hourly-forecast__temperature']}>29°C</p>
           </div>
         </div>
         <div className={styles['hourly-forecast__container']}>
           <p className={styles['hourly-forecast__title']}>12:00</p>
           <div className={styles['hourly-forecast__card']}>
-            <img src={cloud} alt="Sunny" />
+            <WeatherIcons.Clouds />
             <p className={styles['hourly-forecast__temperature']}>30°C</p>
           </div>
         </div>
         <div className={styles['hourly-forecast__container']}>
           <p className={styles['hourly-forecast__title']}>13:00</p>
           <div className={styles['hourly-forecast__card']}>
-            <img src={cloudy} alt="Sunny" />
+            <WeatherIcons.CloudyDay />
             <p className={styles['hourly-forecast__temperature']}>32°C</p>
           </div>
         </div>
         <div className={styles['hourly-forecast__container']}>
           <p className={styles['hourly-forecast__title']}>14:00</p>
           <div className={styles['hourly-forecast__card']}>
-            <img src={rainy} alt="Sunny" />
+            <WeatherIcons.RainDay />
             <p className={styles['hourly-forecast__temperature']}>32°C</p>
           </div>
         </div>

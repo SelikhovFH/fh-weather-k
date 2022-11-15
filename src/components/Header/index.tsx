@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Search from '../Search';
+import { ReactComponent as Logo } from '../../assets/weather_logo.svg';
 
 import styles from './Header.module.scss';
-import logo from '../../assets/weather_logo.svg';
 
 const Header: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <div className={`${styles.header__container} ${styles.container}`}>
         <div className={styles.logo}>
           <Link to="/">
-            <img src={logo} alt="Logo" />
+            <Logo />
           </Link>
         </div>
         <Search />
