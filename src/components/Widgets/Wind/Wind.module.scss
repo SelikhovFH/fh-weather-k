@@ -1,0 +1,21 @@
+.widget {
+  &__compass-icon {
+    margin-top: 32px;
+  }
+
+  &__compass-arrow-icon {
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  &__main-text {
+    position: absolute;
+    margin-top: 20px;
+    font-family: 'Mulish';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+  }
+}

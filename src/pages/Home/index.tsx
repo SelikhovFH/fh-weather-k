@@ -6,11 +6,17 @@ import Subscription from '../../components/Subscription';
 const Home: React.FC = () => {
   return (
     <div className="container">
-      <div>
+      <section className="section slider">
         <Card />
-      </div>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </section>
       {/* <CardSlider /> */}
-      <Subscription />
+      <Subscription className="section" />
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 1880px) { 
+  .widgets {
+    justify-content: space-evenly;
+  }
+}
