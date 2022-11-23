@@ -1,0 +1,47 @@
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 106px 93px;
+    border-radius: 30px;
+    font-family: 'Mulish';
+
+    &__weather, &__datetime {
+        padding: 32px 56px;
+        border-radius: 30px;
+        background: rgba(236, 236, 236, 0.1);
+        backdrop-filter: blur(5px);
+    }
+
+    &__datetime {
+        align-self: flex-end;
+    }
+}
+
+.weather {
+    &__city-name, &__temperature {
+        font-size: 96px;
+        font-weight: 300;
+        line-height: 120px;
+        color: #fff;
+    }
+
+    &__temperature {
+        margin: 32px 0 16px;
+    }
+
+    &__precipitation {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 50px;
+        color: #fff;
+    }
+}
+
+.datetime__text {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    color: #fff;
+}

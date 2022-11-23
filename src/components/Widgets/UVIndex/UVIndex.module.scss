@@ -1,0 +1,29 @@
+.widget {
+  &__main-text {
+    margin-top: 32px;
+    font-family: 'Mulish';
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.uvi-indicator {
+  width: 100%;
+  height: 56px;
+  margin-top: 40px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #68D548 0%, #91D83E 12.5%, #C4D316 21.88%, #E8D807 32.81%, #F9C301 44.27%, #F6A90B 52.6%, #FB7F29 61.46%, #F9692F 72.92%, #F54550 80.73%, #D34BB7 88.02%, #D255CD 97.4%, #B860DA 97.41%);
+  
+  &__ball {
+    position: relative;
+    transform: translateX(-20px);
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7)
+  }
+}

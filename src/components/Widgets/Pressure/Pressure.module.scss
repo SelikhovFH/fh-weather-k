@@ -1,0 +1,19 @@
+.widget {
+  &__main-text {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.pressure-indicator {
+  margin-top: 32px;
+}
+
+.pressure-arrow {
+  position: absolute;
+  transform: translateY(10%);
+}
